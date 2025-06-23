@@ -186,6 +186,11 @@ JSON_SCHEMA: Final[
             "type": "http://www.w3.org/2001/XMLSchema#string"
         },
         {
+            "name": "DigitalItemsOnly",
+            "description": "DigitalItemsOnly",
+            "type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        {
             "name": "ItemLevel",
             "description": "Item Level",
             "type": "http://www.w3.org/2001/XMLSchema#string"

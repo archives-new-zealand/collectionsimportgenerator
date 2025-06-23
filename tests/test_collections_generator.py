@@ -218,6 +218,11 @@ json_schema: Final[
             "type": "http://www.w3.org/2001/XMLSchema#string"
         },
         {
+            "name": "DigitalItemsOnly",
+            "description": "DigitalItemsOnly",
+            "type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        {
             "name": "ItemLevel",
             "description": "Item Level",
             "type": "http://www.w3.org/2001/XMLSchema#string"
@@ -291,6 +296,7 @@ Name=FILE_PATH
 
 item-agy-transferring-reference=
 item-ser-actual-reference=
+DigitalItemsOnly=
 ContentRestrictionStatus=
 ContentRestrictionExpiryType=
 ContentRestrictionExpiryYear=
@@ -361,7 +367,7 @@ ProvenanceNote=Character Data
 res: Final[
     str
 ] = """
-"MissingReason","MissingComment","AgencyIdentifierScheme","Language","AuthenticityIntegrity","item-agy-transferring-reference","item-ser-actual-reference","BoxNumber","PositionReference","RecordNumber","PartNumber","SepFlag","SepNumber","Name","AlternativeName","Creator","YearStartQualifier","YearStart","YearEndQualifier","YearEnd","ContentRestrictionStatus","ContentRestrictionExpiryType","ContentRestrictionExpiryYear","ContentRestrictionAutoExpiry","MetadataRestrictionStatus","MetadataRestrictionExpiryType","MetadataRestrictionExpiryYear","MetadataRestrictionAutoExpiry","IssuableStatus","RecordNumberAlternative","FormerArchivesReference","ContentType","AdditionalDescriptionItem","EntityType","ItemLevel","Current","item-acc-part-of-reference","RepositoryReference","HoldingsLocation","RulesUsed","DocumentationStandard","ProvenanceNote"
+"MissingReason","MissingComment","AgencyIdentifierScheme","Language","AuthenticityIntegrity","item-agy-transferring-reference","item-ser-actual-reference","BoxNumber","PositionReference","RecordNumber","PartNumber","SepFlag","SepNumber","Name","AlternativeName","Creator","YearStartQualifier","YearStart","YearEndQualifier","YearEnd","DigitalItemsOnly","ContentRestrictionStatus","ContentRestrictionExpiryType","ContentRestrictionExpiryYear","ContentRestrictionAutoExpiry","MetadataRestrictionStatus","MetadataRestrictionExpiryType","MetadataRestrictionExpiryYear","MetadataRestrictionAutoExpiry","IssuableStatus","RecordNumberAlternative","FormerArchivesReference","ContentType","AdditionalDescriptionItem","EntityType","ItemLevel","Current","item-acc-part-of-reference","RepositoryReference","HoldingsLocation","RulesUsed","DocumentationStandard","ProvenanceNote"
 "","Description of file One","","","edc3d3797971f12c7f5e1d106dd5cee2","","","","","","","","","collections_test/carlys_file.pdf","02:15:16 PM","New Zealand Lettuce growers association (🥬)","","2022","","","","","","Split Enz","","","","Alice Cooper","","","","♙♘♗♖♕♔♚♛♜♝♞♟","","","","","","","","","","ā, ē, ī, ō, ū, Ā, Ē, Ī, Ō Ū"
 "","Description of file Two","","","ab3c103dfee69624c486b74d3c90db65","","","","","","","","","collections_test/jans_file.pdf","02:11:40 PM","New Zealand Lettuce growers association (🥬)","","2020","","","","","","Split Enz","","","","Alice Cooper","","","","♙♘♗♖♕♔♚♛♜♝♞♟","","","","","","","","","","ā, ē, ī, ō, ū, Ā, Ē, Ī, Ō Ū"
 "","Description of file Three","","","9c1f47efb9e8ab0afc87c2e04fe66b95","","","","","","","","","collections_test/joshuas_file.pdf","02:11:40 PM","New Zealand Lettuce growers association (🥬)","","2020","","","","","","Split Enz","","","","Alice Cooper","","","","♙♘♗♖♕♔♚♛♜♝♞♟","","","","","","","","","","ā, ē, ī, ō, ū, Ā, Ē, Ī, Ō Ū"
