@@ -188,12 +188,12 @@ class ExternalCSVHandler:
 
             for r in temprow:
                 if temprow[r] == "Description":
-                    desc = desc + self.splitns(r).encode("utf-8") + ". "
+                    desc = desc + self.splitns(r) + ". "
                 elif temprow[r] == "Open Year":
-                    opendate = self.splitns(r).encode("utf-8")
+                    opendate = self.splitns(r)
                     newrow[r] = opendate
                 elif temprow[r] == "Close Year":
-                    close = self.splitns(r).encode("utf-8")
+                    close = self.splitns(r)
                     newrow[r] = close
                 else:
                     newrow[r] = temprow[r]
